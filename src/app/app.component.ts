@@ -35,7 +35,7 @@ export class AppComponent {
   }
 
   random_y() {
-    let randNum = Math.floor(Math.random() * window.innerHeight / 2) + 1;
+    let randNum = Math.floor(Math.random() * window.innerHeight) + 1;
     return `${randNum}px`;
   }
 
@@ -46,11 +46,17 @@ export class AppComponent {
   random_par() {
     var value = (Math.random() * 10) % 2
     if (value & 1) {
-      console.log("par" + value)
       return true
     }
-    console.log("impar" + value)
     return false
+  }
+
+  openLink(url:string) {
+    if (url.length > 0) {
+      window.open(url)
+    } else {
+      window.alert("Projects page ins't available yet")
+    }
   }
 
 }
