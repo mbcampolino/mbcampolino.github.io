@@ -1,5 +1,9 @@
 <div class="container" style="padding: 32px;">
 
+  <div class="sky">
+    <app-star [size]="random_size(3)" [horizontal]="random_x()" [vertical]="random_y()" *ngFor="let item of stars; index as i;" [impar]="random_par()"></app-star>
+  </div>
+
   <div class="row">
 
     <div class="profile_pic"></div>
