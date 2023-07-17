@@ -1,33 +1,29 @@
 .star {
   background-color: white;
   border-radius: 180px;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-name: blink10;
+  animation: blink10 60s linear infinite ;
 }
 
 .star2 {
   background-color: white;
   border-radius: 180px;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-name: blink20;
+  animation: blink20 60s linear infinite ;
 }
 
 @keyframes blink10 {
   0%, 100% {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 1);
   }
-  20% {
-    background-color: rgba(226, 226, 226, 0.5);
+  30%, 70% {
+    background-color: rgba(226, 226, 226, 0);
   }
 }
 
 @keyframes blink20 {
   0%, 100% {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 1);
   }
-  40% {
-    background-color: rgba(231, 231, 231, 0.5);
+  40%, 70% {
+    background-color: rgba(226, 226, 226, 0);
   }
 }

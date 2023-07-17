@@ -11,15 +11,16 @@ export interface StartInterface {
 })
 export class BackgroundComponent {
 
-  hour:number = new Date().getHours()
+  hour:number = 12//new Date().getHours()
 
-  currentClass = "night"
+  currentClass = "day"
 
   stars: StartInterface[] = []
 
   constructor() {
-    this.themed()
+    //this.themed()
     //this.test()
+    this.initStars()
   }
 
   test() {
@@ -41,50 +42,50 @@ export class BackgroundComponent {
       this.initStars()
     }
 
-    if (this.hour == 3) {
-      this.currentClass = this.currentClass + " threeAM"
-    }
+    // if (this.hour == 3) {
+    //   this.currentClass = this.currentClass + " threeAM"
+    // }
 
-    if (this.hour == 4) {
-      this.currentClass = this.currentClass + " fourAM"
-    }
+    // if (this.hour == 4) {
+    //   this.currentClass = this.currentClass + " fourAM"
+    // }
 
-    if (this.hour == 5) {
+    // if (this.hour == 5) {
 
-      this.currentClass = this.currentClass + " fiveAM"
-    }
+    //   this.currentClass = this.currentClass + " fiveAM"
+    // }
 
-    if (this.hour == 6) {
-      this.currentClass = this.currentClass + " sixAM"
-    }
+    // if (this.hour == 6) {
+    //   this.currentClass = this.currentClass + " sixAM"
+    // }
 
-    if (this.hour == 7) {
-      this.currentClass = this.currentClass + " sevenAM"
-    }
+    // if (this.hour == 7) {
+    //   this.currentClass = this.currentClass + " sevenAM"
+    // }
 
-    if (this.hour == 8) {
-      this.currentClass = this.currentClass + " eightAM"
-    }
+    // if (this.hour == 8) {
+    //   this.currentClass = this.currentClass + " eightAM"
+    // }
 
-    if (this.hour == 9) {
-      this.currentClass = this.currentClass + " nineAM"
-    }
+    // if (this.hour == 9) {
+    //   this.currentClass = this.currentClass + " nineAM"
+    // }
 
-    if (this.hour == 15) {
-      this.currentClass = this.currentClass + " fifteen"
-    }
+    // if (this.hour == 15) {
+    //   this.currentClass = this.currentClass + " fifteen"
+    // }
 
-    if (this.hour == 16) {
-      this.currentClass = this.currentClass + " sixteen"
-    }
+    // if (this.hour == 16) {
+    //   this.currentClass = this.currentClass + " sixteen"
+    // }
 
-    if (this.hour == 17) {
-      this.currentClass = this.currentClass + " seventeen"
-    }
+    // if (this.hour == 17) {
+    //   this.currentClass = this.currentClass + " seventeen"
+    // }
 
-    if (this.hour == 18) {
-      this.currentClass = this.currentClass + " eighteen"
-    }
+    // if (this.hour == 18) {
+    //   this.currentClass = this.currentClass + " eighteen"
+    // }
 
     console.log(this.hour)
   }
@@ -96,11 +97,9 @@ export class BackgroundComponent {
 
     this.stars.splice(0)
 
-    if (this.hour < 7 || this.hour > 18) {
-      for (let index = 0; index < 50; index++) {
-        const element = {size: 1}
-        this.stars.push(element)
-      }
+    for (let index = 0; index < 50; index++) {
+      const element = {size: 1}
+      this.stars.push(element)
     }
   }
 
