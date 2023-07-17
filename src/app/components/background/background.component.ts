@@ -11,7 +11,7 @@ export interface StartInterface {
 })
 export class BackgroundComponent {
 
-  hour:number = 3//new Date().getHours()
+  hour:number = new Date().getHours()
 
   currentClass = "night"
 
