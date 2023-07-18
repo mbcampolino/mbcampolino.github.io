@@ -9,12 +9,4 @@ export class AppComponent {
 
   title = 'landing-page';
 
-  openLink(url:string) {
-    if (url.length > 0) {
-      window.open(url)
-    } else {
-      window.alert("Projects page ins't available yet")
-    }
-  }
-
 }
