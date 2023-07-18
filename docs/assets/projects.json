@@ -13,6 +13,18 @@
           "description": "",
           "imgUrl": "https://d4.alternativeto.net/i6PUNqpNr8JUBrZevQV4qo6Oz3UA2fHPkVX9hppyZAw/rs:fill:400:225:1/g:ce:0:0/YWJzOi8vZGlzdC9zL2ZpbG1yXzk1ODMwNF9mdWxsLmpwZw.jpg",
           "action": "https://play.google.com/store/apps/details?id=com.filmrapp.videoeditor"
+        },
+        {
+          "title": "McDonald's",
+          "description": "",
+          "imgUrl": "https://www.saboravida.com.br/wp-content/uploads/2021/01/cardapio-mcdonalds.webp",
+          "action": "https://br.ign.com/brasil/20974/news/zangado-lanca-aplicativo-na-google-play"
+        },
+        {
+          "title": "Zangado Games",
+          "description": "",
+          "imgUrl": "https://im.ziffdavisinternational.com/ign_br/screenshot/default/app-zangado-imagens-celular_gae1.jpg",
+          "action": "https://br.ign.com/brasil/20974/news/zangado-lanca-aplicativo-na-google-play"
         }
       ]
     },
@@ -29,6 +41,12 @@
           "title": "SimTasks",
           "description": "",
           "imgUrl": "https://play-lh.googleusercontent.com/9LHorwpUH76l8LKVZTtDJvZZ1i92qGN0_d_tBHwBplITbRmGpz2z3K8ie2Bp0H-Qd4B1=w2560-h1440-rw",
+          "action": "https://play.google.com/store/apps/details?id=com.codecampos.simtask"
+        },
+        {
+          "title": "TapDrivr",
+          "description": "",
+          "imgUrl": "../assets/tapdrivr.png",
           "action": "https://play.google.com/store/apps/details?id=com.codecampos.simtask"
         }
       ]
