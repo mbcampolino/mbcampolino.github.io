@@ -72,6 +72,10 @@
               "browserTarget": "landing-page:build:development"
             }
           },
+          "options": {
+            "port": 4200,
+            "host": "127.0.0.1"
+        },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

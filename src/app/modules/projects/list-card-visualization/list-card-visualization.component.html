@@ -1,2 +1,6 @@
-<p>{{data.header}}</p>
-<!-- <app-card-visualization></app-card-visualization> -->
+<p class="header">{{data.header}}</p>
+<div class="row">
+  <div class="col" *ngFor="let item of data.cards">
+    <app-card-visualization [card]="item"></app-card-visualization>
+  </div>
+</div>

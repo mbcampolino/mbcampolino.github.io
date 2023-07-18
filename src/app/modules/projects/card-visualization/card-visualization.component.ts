@@ -8,11 +8,15 @@ import { CardVisualization } from 'src/app/models/card.model';
 })
 export class CardVisualizationComponent {
 
-  @Input() cards: CardVisualization = {
+  @Input() card: CardVisualization = {
     title: "",
     description: "",
     imgUrl: "",
     action: ""
+  }
+
+  open(url: string) {
+    window.open(url)
   }
 
 }
