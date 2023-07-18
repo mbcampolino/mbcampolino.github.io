@@ -1,5 +1,5 @@
 <p class="header">{{data.header}}</p>
-<div class="row" style="margin-bottom: 64px;">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" style="margin-bottom: 64px;">
   <div class="col" *ngFor="let item of data.cards">
     <app-card-visualization [card]="item"></app-card-visualization>
   </div>
